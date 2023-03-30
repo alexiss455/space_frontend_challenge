@@ -36,7 +36,7 @@ function Header() {
 
   return (
     <Router>
-      <div className="max-md:mt-4 max-w-screen-[100vw] m-auto max-lg:pl-8 pl-16 ml-auto lg:pt-10 flex items-center justify-between after:block after:content-[''] after:h-[1px] after:w-full after:bg-gray-500 after:z-30 after:-mr-5 font-san2 after:max-lg:hidden">
+      <div className="max-md:mt-4 max-w-screen-[100vw] m-auto max-lg:pl-8 pl-16 ml-auto lg:pt-10 flex items-center justify-between after:block after:content-[''] after:h-[1px] after:w-full after:bg-gray-500 after:z-50 after:-mr-5 font-san2 after:max-lg:hidden">
         <img src={logo} className="md:pr-8" />
 
         <nav

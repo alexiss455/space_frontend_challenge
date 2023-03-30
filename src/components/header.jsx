@@ -68,7 +68,7 @@ function Header() {
           className2={`${isMenuOpen ? "opacity-0" : ""}`}
         />
       </div>
- 
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destination" element={<Destination />} />

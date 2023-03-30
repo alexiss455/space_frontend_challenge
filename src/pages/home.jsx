@@ -22,8 +22,7 @@ bg-cover flex items-center justify-center absolute top-0 bg-slate-900 max-md:pb-
         </div>
         <div
           className="relative text-[2rem] font-sans w-64 h-64 bg-white text-black flex items-center justify-center rounded-full m-auto after:content-['']  after:w-64 after:h-64 after:bg-white after:opacity-25 after:rounded-full after:absolute after:hover:scale-125 after:duration-700 cursor-pointer
-          "
-        >
+          ">
           <h1>EXPLORE</h1>
         </div>
       </div>

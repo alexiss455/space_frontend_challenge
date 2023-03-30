@@ -19,7 +19,7 @@ export default function crews() {
           <h1>MEET YOUR CREW</h1>
         </div>
         <div className=" grid md:grid-cols-2 mt-16">
-          <div className="text-gray-400 flex justify-between flex-col pb-10">
+          <div className="text-gray-400 flex justify-between flex-col max-md:flex-col-reverse pb-10">
             <div>
               <h1 className="text-4xl font-sans tracking-wide">
                 {crew[tab].title}
@@ -30,7 +30,7 @@ export default function crews() {
               <p className="mt-8 leading-[1.75rem]">{crew[tab].content}</p>
             </div>
 
-            <div className="flex items-center justify-start max-md:justify-center gap-x-4 mt-20">
+            <div className="flex items-center justify-start max-md:justify-center gap-x-4 mt-20 max-md:my-10">
               {crew.map((item, index) => (
                 <button
                   key={index}
@@ -45,7 +45,7 @@ export default function crews() {
             </div>
           </div>
 
-          <div className="m-auto">
+          <div className="m-auto max-md:order-first">
             <img
               src={crew[tab].img}
               alt="logo"

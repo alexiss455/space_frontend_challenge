@@ -1,6 +1,10 @@
 import s  from "../assets/technology/image-space-capsule-portrait.jpg"
 import s1  from "../assets/technology/image-launch-vehicle-portrait.jpg"
 import s2  from "../assets/technology/image-spaceport-portrait.jpg"
+
+import ss from "../assets/technology/image-space-capsule-landscape.jpg"
+import ss1 from "../assets/technology/image-launch-vehicle-landscape.jpg"
+import ss2 from "../assets/technology/image-spaceport-landscape.jpg"
 const tech = [
     {
         title: ` SPACE CAPSULE`,
@@ -8,7 +12,8 @@ const tech = [
         capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
         you'll spend your time during the flight. It includes a space gym, cinema, 
         and plenty of other activities to keep you entertained.`,
-        img: s
+        img: s,
+        img2: ss
     },
 
     {
@@ -17,7 +22,8 @@ const tech = [
         by analogy to the seaport for ships or airport for aircraft. Based in the 
         famous Cape Canaveral, our spaceport is ideally situated to take advantage 
         of the Earth’s rotation for launch.`,
-        img: s2
+        img: s2,
+        img2: ss2
     },
 
     {
@@ -26,7 +32,8 @@ const tech = [
         payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
         WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
         it's quite an awe-inspiring sight on the launch pad!`,
-        img: s1
+        img: s1,
+        img2: ss1
     }
 ]
 

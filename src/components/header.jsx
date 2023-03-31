@@ -52,7 +52,7 @@ function Header() {
                 <NavLink
                   onClick={handleClick}
                   to={items.path}
-                  className="relative after:bg-white after:w-0 after:h-[2px] after:absolute after:bottom-0 after:right-0 after:duration-300 hover:after:w-full hover:after:left-0 flex items-center justify-center gap-x-4 py-8 tracking-[.2rem]"
+                  className=" relative after:bg-white after:w-0 after:h-[2px] after:absolute after:bottom-0 after:right-0 after:duration-300 hover:after:w-full hover:after:left-0 flex items-center justify-center gap-x-4 py-8 tracking-[.2rem]"
                 >
                   <span className="font-black">0{index}</span>
                   {items.label}

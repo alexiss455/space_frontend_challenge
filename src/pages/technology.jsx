@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import tech from "../jsonfileplaplanets/technology";
 export default function technology() {
   const [tabs, setTabs] = useState(0);
   function handleClick(index) {
     setTabs(index);
   }
-
-
-  const wid = window.innerWidth
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div
@@ -48,7 +53,7 @@ export default function technology() {
             </div>
           </div>
           <div className="ml-auto max-md:m-auto max-md:order-first">
-            <img className="w-full h-full object-cover object-center" src={wid <= 678 ? tech[tabs].img2 : tech[tabs].img } />
+            <img className="w-full h-full object-cover object-center" src={windowWidth <= 678 ? tech[tabs].img2 : tech[tabs].img } />
           </div>
         </div>
       </div>
